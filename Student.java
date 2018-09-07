@@ -1,21 +1,25 @@
-
 public class Student {
-	private String student_name;
-	
+
 	private int student_id;
+	private String student_name;
 	private int mark1;
 	private int mark2;
 	private int mark3;
 	private float percentage;
 	private String grade;
+
 	
-	public Student(int student_id,String student_name,int mark1,int mark2,int mark3)
-	{
+
+	public Student(int student_id, String student_name, int mark1, int mark2, int mark3, float percentage,
+			String grade) {
+		super();
 		this.student_id = student_id;
 		this.student_name = student_name;
 		this.mark1 = mark1;
 		this.mark2 = mark2;
 		this.mark3 = mark3;
+		this.percentage = percentage;
+		this.grade = grade;
 	}
 
 	public String getStudent_name() {
@@ -63,6 +67,5 @@ public class Student {
 		return "Student [student_name=" + student_name + ", student_id=" + student_id + ", mark1=" + mark1 + ", mark2="
 				+ mark2 + ", mark3=" + mark3 + ", percentage=" + percentage + ", grade=" + grade + "]";
 	}
-	
-	
+
 }
